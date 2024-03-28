@@ -31,7 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
-/member/.mvn/
-/member/.gitignore
-/member/mvnw
-/member/mvnw.cmd
+/**/.mvn/
+/**/.gitignore
+/**/mvnw
+/**/mvnw.cmd
+/log/

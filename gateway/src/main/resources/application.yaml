@@ -1,0 +1,15 @@
+# 后期可配置成远程地址
+spring:
+  cloud:
+    gateway:
+      mvc:
+        routes-map: true
+        routes:
+          - id: member
+            uri: uri:http://localhost:8001
+            predicates:
+              - Path=/member/**
+            filters:
+              - StripPrefix=1
+server:
+  port: 8080
